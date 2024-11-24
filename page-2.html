@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page-2</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Heading -->
+    <header class="">
+        <nav class="container h-32 bg-white flex justify-between items-center">
+            <!-- logo -->
+            <div class="logo w-1/2 lg:w-[395px] lg:h-[72px]">
+                <img src="./figma-image/header-logo.png" alt="">
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="">
+                <ul class="hidden lg:flex items-center text-sm uppercase font-medium gap-10">
+                    <li><a class="hover:text-[#16A8AA]" href="">Startseite</a></li>
+                    <li><a class="hover:text-[#16A8AA]" href="">Service</a></li>
+                    <li><a class="hover:text-[#16A8AA]" href="">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info w-[368px] h-[91px] bg-[#1D183A] hidden lg:flex justify-center items-center">
+                <div class="icon text-[#16A8AA] text-4xl p-5">
+                   <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                 <div class="info text-white text-base">
+                     <p>Nehmen Sie mit uns Kontakt auf</p>
+                     <p class="font-semibold">Tel.: +49 40 / 334669740</p>
+                 </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="menuber" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="menu" class="hidden bg-white h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20 ">
+                    <li><a  id="hlink" class="text-color-primary hover:text-[#16A8AA]" href="">Startseite</a></li>
+                    <li><a  id="hlink" class="text-color-primary hover:text-[#16A8AA]" href="">Service</a></li>
+                    <li><a  id="hlink" class="text-color-primary hover:text-[#16A8AA]" href="">Kontakt</a></li>
+                    <div class="contact-info w-[368px] h-[91px] bg-[#1D183A] flex justify-center items-center">
+                        <div class="icon text-[#16A8AA] text-4xl p-5">
+                           <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                         <div class="info text-white text-base">
+                             <p>Nehmen Sie mit uns Kontakt auf</p>
+                             <p class="font-semibold">Tel.: +49 40 / 334669740</p>
+                         </div>
+                    </div>
+                </ul> 
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- hero Section 1 -->
+        <section class="bg-color-primary py-14">
+            <div class="container">
+                <div class="flex text-white flex-col md:flex-row lg:justify-between md:justify-evenly items-center">
+                    <p class="text-2xl">Dienstunfähigkeitsversicherung</p>
+                    <p class="text-sm">Startseite » Service » Dienstunfähigkeit</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- hero Section 2 -->
+        <section class="bg-white">
+            <div class="container py-24">
+                <div class="flex flex-col lg:flex-row justify-between gap-5 lg:gap-0 items-center">
+                    <div class="lg:w-1/2 text-color-text flex 
+                       lg:justify-start lg:items-start flex-col justify-center items-center">
+                       <div class="mb-5 flex flex-col md:justify-start md:items-start justify-center items-center">
+                          <p class="text-base font-medium mb-">Dienstunfähigkeitsversicherung</p>
+                          <div class="w-60 h-[3px] bg-color-secondary mt-2"></div>
+                       </div>
+                       <p class="text-3xl text-center lg:text-left w-1/2 font-medium mb-5">Auch Beamte müssen Vorsorge treffen!</p>
+                       <p class="text-color-text text-center lg:text-left">
+                           Das Thema Dienstunfähigkeit wird von vielen Beamten noch immer verharmlost. 
+                           Gerade nach der Lebenszeitverbeamtung wird hier gerne von einer „Vollkasko-Absicherung“ im 
+                           Ernstfall ausgegangen. Die wenigsten Beamten aber wissen wirklich, wie hoch ihre Bezüge im 
+                           Fall einer Dienstunfähigkeit (DU) tat- sächlich ausfallen würden. Auch die schlechte Versorgungssitu- 
+                           ation von Beamten auf Widerruf respektive auf Probe ist vielen Betroffenen unbekannt. Um einen Einkommensverlust
+                           im Falle der DU auffangen zu können, 
+                           ist der Abschluss einer Berufsunfähigkeits-versicherung mit Dienstunfähigkeitsklausel nur drin- gend zu empfehlen.
+                       </p>
+                    </div>
+
+                    <div>
+                        <img src="./figma-image/Hero-section-Page-2.png" class="w-[547px] h-[387px] object-cover" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+
+        <section class="bg-color-boring">
+            <div class="container py-24">
+                <div class="text-center mb-14">
+                    <div class="mb-4 flex flex-col justify-center items-center">
+                        <p class="text-sm">Unser Service</p>
+                        <div class="w-24 h-[3px] bg-color-secondary mt-2"></div>
+                    </div>
+                    <p class="text-3xl mb-4">Schadenbeispiele aus der Praxis</p>
+                </div>
+
+                <!-- Img -->
+
+                <div class="flex flex-col gap-5">
+                    <!-- Card-1 -->
+                    <div class="flex flex-col lg:flex-row justify-center items-center gap-10 p-5 bg-white shadow-lg">
+                        <div>
+                            <img src="./figma-image/service-section-page-2-img-1.png" alt="">
+                        </div>
+                        <div>
+                            <p class="mb-4 text-lg">ASTHMA</p>
+                            <p class="text-base mb-4">Der Feuerwehrmann Herr K. arbeitet schon 20 Jahre in seinem Beruf. Nach einer Grippeerkrankung 
+                                leidet er an starkem Asth- ma. Die Erkrankung macht es ihm unmöglich, ein Atemschutz- gerät zu tragen.
+                            </p>
+                            <p class="mb-3">Mit einer speziellen Dienstunfähigkeitsklausel wäre die Versor- gungslücke hier geschlossen.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card-2 -->
+                    <div class="flex flex-col lg:flex-row justify-center items-center gap-10 p-5 bg-white shadow-lg">
+                        <div>
+                            <img src="./figma-image/service-section-page-2-img-2.png" class="object-cover" alt="">
+                        </div>
+                        <div>
+                            <p class="mb-4 text-lg">FREIZEITUNFALL</p>
+                            <p class="text-base mb-4">Der Feuerwehrmann Herr K. arbeitet schon 20 Jahre in seinem Beruf. Nach einer Grippeerkrankung 
+                                leidet er an starkem Asth- ma. Die Erkrankung macht es ihm unmöglich, ein Atemschutz- gerät zu tragen.
+                            </p>
+                            <p class="mb-3">Mit einer speziellen Dienstunfähigkeitsklausel wäre die Versor- gungslücke hier geschlossen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+
+        <section>
+            <div class="container py-20">
+                <div class="flex flex-col md:flex-row justify-between gap-6">
+                    <div class="w-full md:w-1/4">
+                        <div class="mb-5">
+                            <p class="text-base font-medium mb-">Dienstunfähigkeitsversicherung</p>
+                            <div class="w-60 h-[3px] bg-color-secondary mt-2"></div>
+                        </div>
+                        <aside class="bg-white">
+                            <h2 class="text-3xl font-medium mb-4">Wissenswertes</h2>
+                            <ul class="space-y-3 px-4 mt-10">
+                              <li><a href="#" class="text-blue-600 hover:underline">Die Vorsorge ist statusabhängig</a></li>
+                              <li><a href="#" class="text-blue-600 hover:underline">Auszüge aus den Versorgungsgesetzen</a></li>
+                              <li><a href="#" class="text-blue-600 hover:underline">Für wen ist die Versicherung?</a></li>
+                              <li><a href="#" class="text-blue-600 hover:underline">Was ist versichert?</a></li>
+                              <li><a href="#" class="text-blue-600 hover:underline">Wann liegt eine Dienstunfähigkeit vor?</a></li>
+                              <li><a href="#" class="text-blue-600 hover:underline">Unterschiede: Dienst- und Berufsunfähigkeit</a></li>
+                              <li><a href="#" class="text-blue-600 hover:underline">Welche Ergebnisse sind u.a. nicht mitversichert?</a></li>
+                              <li><a href="#" class="text-blue-600 hover:underline">Auszüge aus Beamtengesetzen</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+
+                    <!-- Main Content -->
+
+                    <div class="main-content w-full md:w-3/5">
+                        <div>
+                            <h2 class="text-xl font-medium mb-4">Die Vorsorge ist statusabhängig</h2>
+                            <p class="mb-4 text-gray-700">
+                              Die Versorgung eines Beamten durch seinen Dienstherrn ist in erster Linie statusabhängig; so muss als erstes der
+                              Beamtenstatus festgestellt werden. Es wird hier zwischen drei Arten von Beamten unterschieden:
+                            </p>
+                        </div>
+                        
+                        <div class="bg-color-boring py-10 px-20">
+                            <img src="./figma-image/page-2 img-1.png" alt="">
+                        </div>
+                        
+                        <p class="text-base pt-4">Die größten Risiken ergeben sich bei den Status als Beamter auf Widerruf und Beamter auf Probe.</p>
+
+                        <div class="bg-color-boring py-10 px-20 mt-4">
+                            <img src="./figma-image/page-2 img-2.png" alt="">
+                        </div>
+                        
+                        <div>
+                            <p class="text-base mt-5">
+                                Bei einer Dienstunfähigkeit durch einen Freizeitunfall oder eine Krank- heit,
+                                 die in keinem Zusammenhang zur Tätigkeit steht, droht die Ent- lassung. Das 
+                                 bedeutet, dass der Beamte tatsächlich aus dem Dienst ausscheiden muss und keinerlei
+                                  versorgungsrechtliche Ansprüche genießt. Er wird in der gesetzlichen Rentenversicherung
+                                   nachversi- chert für die Zeit, die der Beamte seinen Dienst geleistet hat und hat eventuell
+                                    Anspruch auf eine Erwerbsminderungsrente. Hier muss jedoch eine Wartezeit erfüllt sein 
+                                    (in den letzten fünf Jahren müssen vor der Erwerbsminderung mindestens drei Jahre lang 
+                                    Pflichtbeiträge gezahlt worden sein oder man muss mindestens fünf Jahre versichert gewesen sein).
+                                    Die Nachversicherungszeit wird zwar angerechnet, genügt aber gerade bei Beamten auf Widerruf, 
+                                die über den ersten Bildungsweg kommen, oftmals nicht, um Ansprüche auszulösen.
+                            </p>
+                        </div>
+
+                        <p class="mt-8 text-xl font-medium">Auszüge aus Beamtenversorgungsgesetzen:</p>
+
+                        <div class="p-8 rounded-br-3xl bg-color-boring mt-5">
+                            <p class="text-lg font-medium">§ 26 Beamtenstatusgesetz</p>
+                            <p class="text-color-ass">Die Beamtin oder der Beamte auf Lebenszeit ist in den Ruhe- stand zu versetzen,
+                                wenn sie oder er wegen des körperlichen
+                                 Zustandes oder aus gesundheitlichen Gründen zur Erfüllung 
+                                der Dienstpflichten dauernd unfähig ist.
+                            </p>
+                        </div>
+
+                        <div class="p-8 rounded-br-3xl bg-color-boring mt-5">
+                            <p class="text-lg font-medium">§ 42 Beamtenstatusgesetz</p>
+                            <p class="text-color-ass">Die Beamtin oder der Beamte auf Lebenszeit ist in den Ruhe- stand zu versetzen,
+                                wenn sie oder er wegen des körperlichen
+                                 Zustandes oder aus gesundheitlichen Gründen zur Erfüllung 
+                                der Dienstpflichten dauernd unfähig ist.
+                            </p>
+                        </div>
+                        
+                        <p class="mt-5 text-xl font-medium">FÜR WEN IST DIE VERSICHERUNG?</p>
+
+                        <p class="text-base text-color-ass mt-5">
+                            Empfehlenswert ist diese Form der Arbeitskraftabsicherung für alle Beamten, 
+                            Soldaten und beamtenähnlich Beschäftigte (z. B. Richter).
+                        </p>
+
+                        <p class="mt-8 text-xl font-medium">WAS IST VERSICHERT?</p>
+
+                        <p class="text-base text-color-ass mt-5">
+                            Eine private Berufsunfähigkeitsversicherung zahlt in der Regel dann eine Rente,
+                            wenn der Versicherte zu mindestens 50 Prozent berufs- unfähig ist, er also seinen
+                            aktuellen Beruf nicht mehr voll ausüben kann. Das Vorhandensein einer echten, 
+                            vollständigen Dienstunfähig- keitsklausel sorgt dafür, dass sich der Versicherer der 
+                            Einschätzung des Dienstherrn eines Beamten beugt und dessen Entscheidung zur Dienstunfähigkeit übernimmt.
+                        </p>
+
+                        <p class="mt-8 text-xl font-medium">WANN LIEGT EINE DIENSTUNFÄHIGKEIT VOR?</p>
+
+                        <p class="text-base text-color-ass mt-5">
+                            Eine bedingungsgemäße Dienstunfähigkeit liegt in der Regel dann vor, wenn ein Beamter aufgrund 
+                            gesundheitlicher Einschränkungen in den Ruhestand versetzt oder entlassen wurde. Zur Beantragung
+                            der Leistung muss die Entlassungs- beziehungsweise Versetzungs- urkunde beim Versicherer vorgelegt
+                            werden – je nach Anbieter kann eventuell auch eine Kopie des amtsärztlichen Zeugnisses ergänzend gefordert werden.
+                        </p>
+
+                        <p class="mt-8 text-xl font-medium">UNTERSCHIEDE: DIENST- UND BERUFSUNFÄHIGKEIT</p>
+
+                        <div class="bg-color-boring py-10 px-24 mt-5">
+                            <img src="./figma-image/page-2 img-3.png" class="" alt="">
+                        </div>
+
+                        <p class="mt-8 text-xl font-medium">WELCHE EREIGNISSE SIND U.A. NICHT MITVERSICHERT?</p>
+
+                        <p class="text-base text-color-ass mt-5">
+                            Eine bedingungsgemäße Dienstunfähigkeit liegt in der Regel dann vor, wenn ein Beamter aufgrund 
+                            gesundheitlicher Einschränkungen in den Ruhestand versetzt oder entlassen wurde. Zur Beantragung
+                            der Leistung muss die Entlassungs- beziehungsweise Versetzungs- urkunde beim Versicherer vorgelegt
+                            werden – je nach Anbieter kann eventuell auch eine Kopie des amtsärztlichen Zeugnisses ergänzend gefordert werden.
+                        </p>
+
+                        <div class="mt-5 text-color-ass px-10">
+                            <p class="mt-3">Versetzung oder Entlassung aufgrund anderer als gesundheit- licher Gründe
+                                (z. B. Verlust der Beamteneignung nach strafrecht- licher Verurteilung o. ä.).
+                            </p>
+                            <p class="mt-3">Bestimmte Berufe sind bei vielen Anbietern nicht oder nur zu erschwerten Bedingungen 
+                                versicherbar, wie z. B. Kampfpiloten.
+                            </p>
+                            <p class="mt-3">Ein aktives Terror- und Kriegsrisiko.</p>
+                            <p class="mt-3">Bei Vorsatz wird nicht geleistet.</p>
+                            <p class="mt-3">Bei Vertragsabschluss bereits bestehende Erkrankungen werden meist 
+                                ausgeschlossen oder führen zu einem Risikozuschlag.
+                            </p>
+                        </div>
+
+                        <p class="mt-8 text-xl font-medium">SPEZIELLE DIENSTUNFÄHIGKEIT</p>
+
+                        <p class="text-base text-color-ass mt-5">
+                            Eine bedingungsgemäße Dienstunfähigkeit liegt in der Regel dann vor, wenn ein Beamter aufgrund 
+                            gesundheitlicher Einschränkungen in den Ruhestand versetzt oder entlassen wurde. Zur Beantragung
+                            der Leistung muss die Entlassungs- beziehungsweise Versetzungs- urkunde beim Versicherer vorgelegt
+                            werden – je nach Anbieter kann eventuell auch eine Kopie des amtsärztlichen Zeugnisses ergänzend gefordert werden.
+                        </p>
+
+                        <div class="p-8 rounded-br-3xl bg-color-boring mt-5">
+                            <p class="text-lg font-medium">§ 4 Bundespolizeibeamtengesetz</p>
+                            <p class="text-color-ass">Die Beamtin oder der Beamte auf Lebenszeit ist in den Ruhe- stand zu versetzen,
+                                wenn sie oder er wegen des körperlichen
+                                 Zustandes oder aus gesundheitlichen Gründen zur Erfüllung 
+                                der Dienstpflichten dauernd unfähig ist.
+                            </p>
+                        </div>
+
+                        <p class="mt-8 text-xl font-medium">Was das konkret bedeutet, verdeutlicht ein Beispiel:</p>
+
+                        <p class="text-base text-color-ass mt-5">
+                            Eine bedingungsgemäße Dienstunfähigkeit liegt in der Regel dann vor, wenn ein Beamter aufgrund 
+                            gesundheitlicher Einschränkungen in den Ruhestand versetzt oder entlassen wurde. Zur Beantragung
+                            der Leistung muss die Entlassungs- beziehungsweise Versetzungs- urkunde beim Versicherer vorgelegt
+                            werden – je nach Anbieter kann eventuell auch eine Kopie des amtsärztlichen Zeugnisses ergänzend gefordert werden.
+                        </p>
+
+                        <p class="mt-8 text-xl font-medium">Zielgruppen für die spezielle DU sind:</p>
+
+                        <p class="text-color-ass mt-5">(abhängig von den Ländern und dem Dienstherrn)</p>
+
+                        <div class="px-12 mt-5 text-color-ass">
+                            <p class="">Polizisten</p>
+                            <p class="mt-4">Feuerwehrleute</p>
+                            <p class="mt-4">Soldaten</p>
+                            <p class="mt-4">Justizvollzugsbeamte</p>
+                        </div>
+
+                        <p class="mt-8 text-xl font-medium">WELCHE ZUSÄTZLICHEN VERSICHE- RUNGEN SIND ZU EMPFEHLEN?</p>
+
+                        <div class="p-8 rounded-br-3xl bg-color-boring mt-5">
+                            <div>
+                                <p class="text-lg font-medium">Diensthaftpflicht</p>
+                                <p class="text-color-ass">Die Beamtin oder der Beamte auf Lebenszeit ist in den Ruhe- stand zu versetzen,
+                                   wenn sie oder er wegen des körperlichen
+                                   Zustandes oder aus gesundheitlichen Gründen zur Erfüllung 
+                                   der Dienstpflichten dauernd unfähig ist.
+                                </p>
+                            </div>
+
+                            <div class="mt-4">
+                                <p class="text-lg font-medium">Unfallversicherung</p>
+                                <p class="text-color-ass">Die Beamtin oder der Beamte auf Lebenszeit ist in den Ruhe- stand zu versetzen,
+                                   wenn sie oder er wegen des körperlichen
+                                   Zustandes oder aus gesundheitlichen Gründen zur Erfüllung 
+                                   der Dienstpflichten dauernd unfähig ist.
+                                </p>
+                            </div>
+
+                            <div class="mt-4">
+                                <p class="text-lg font-medium">Pflegezusatzversicherung</p>
+                                <p class="text-color-ass">Die Beamtin oder der Beamte auf Lebenszeit ist in den Ruhe- stand zu versetzen,
+                                   wenn sie oder er wegen des körperlichen
+                                   Zustandes oder aus gesundheitlichen Gründen zur Erfüllung 
+                                   der Dienstpflichten dauernd unfähig ist.
+                                </p>
+                            </div>
+
+                            <div class="mt-4">
+                                <p class="text-lg font-medium">Rentenversicherung</p>
+                                <p class="text-color-ass">Die Beamtin oder der Beamte auf Lebenszeit ist in den Ruhe- stand zu versetzen,
+                                   wenn sie oder er wegen des körperlichen
+                                   Zustandes oder aus gesundheitlichen Gründen zur Erfüllung 
+                                   der Dienstpflichten dauernd unfähig ist.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+
+        <footer class="bg-[#1D183A] flex flex-col justify-center items-center py-16 text-white">
+            <div class="container flex flex-col md:flex-row justify-between gap-5 md:gap-0 md:items-center">
+                <!-- Logo and Description -->
+                <div class="w-1/3">
+                    <img class="w-[295px] h-[72px] bg-cover bg-center filter invert brightness-0" src="./figma-image/header-logo.png" alt="">
+                    <p class="mt-12">
+                        Ihre Experten für die optimale Absicherung <br>von Beamten & Beamtenanwärtern.
+                    </p>
+                </div>
+    
+                <!-- Contact Section -->
+                <div class="w-1/3">
+                    <h4 class="text-xl font-semibold mb-2">Kontakt</h4>
+                    <div class="w-24 h-[3px] bg-color-secondary mt-2"></div>
+                    <p class="mt-3">Beamtenvorsorge.de<br>Lübecker Str. 101<br>22087 Hamburg</p>
+                    <p class="mt-6">Telefon: +49 40 / 334669740<br>E-Mail: info@Beamtenvorsorge.de</p>
+                </div>
+    
+                <!-- Services Section -->
+                <div class="lg:w-1/3 lg:ml-20">
+                    <h4 class="text-xl font-semibold mb-2">Unser Service</h4>
+                    <div class="w-24 h-[3px] bg-color-secondary mt-2"></div>
+                    <ul class="space-y-2 mt-3">
+                        <li>➔ Beamte</li>
+                        <li>➔ Berufsstarter im Öffentlichen Dienst</li>
+                        <li>➔ Dienstunfähigkeitsversicherung</li>
+                        <li>➔ Diensthaftpflichtversicherung</li>
+                        <li>➔ Vermögensschadenhaftpflicht</li>
+                        <li>➔ Kontakt</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- Bottom Footer Text -->
+            <div class="container flex justify-between text-center border-t border-gray-600 pt-4 mt-4">
+                <p class="text-sm">Copyright © 2024. Beamtenvorsorge.de</p>
+                <p class="text-sm">Impressum | Datenschutz</p>
+            </div>
+        </footer>
+    </main>
+
+
+    <script>
+        // Mobile User
+        const menuber = document.querySelector('#menuber');
+        const menu = document.querySelector('#menu');
+        const hlink = document.querySelectorAll('#hlink');
+        const fasolid = document.querySelector('.fa-solid');
+
+        menuber.addEventListener("click", () =>{
+            menu.classList.toggle('hidden');
+            fasolid.classList.toggle('fa-xmark')
+        })
+    </script>
+</body>
+</html>
