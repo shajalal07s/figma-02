@@ -9,6 +9,7 @@ module.exports = {
         'color-text': '#1D183A',
         'color-boring': '#D9D9D9',
         'color-ass': '#333333',
+        'color-border': '#D9D9D9',
       }
     },
     container: {
