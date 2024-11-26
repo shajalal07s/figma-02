@@ -10,6 +10,9 @@ module.exports = {
         'color-boring': '#D9D9D9',
         'color-ass': '#333333',
         'color-border': '#D9D9D9',
+      },
+      width: {
+        
       }
     },
     container: {

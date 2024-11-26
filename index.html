@@ -8,72 +8,103 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Header Section-->
-    <header>
+    <!-- Heading -->
+    <header class="">
         <nav class="container h-32 bg-white flex justify-between items-center">
             <!-- logo -->
-            <div class="logo w-[395px] h-[72px]">
+            <div class="logo w-1/2 lg:w-96 mt-5 lg:h-16 flex justify-center items-center">
                 <img src="./figma-image/header-logo.png" alt="">
-            </div> 
+            </div>
+
             <!-- Navigation Menu -->
-            <div class="navigation-menu">
-                <ul class="flex justify-center items-center text-sm uppercase font-medium gap-10">
+            <div class="">
+                <ul class="hidden lg:flex items-center pt-10 text-sm uppercase font-medium gap-10">
                     <li><a class="hover:text-[#16A8AA]" href="">Startseite</a></li>
                     <li><a class="hover:text-[#16A8AA]" href="">Service</a></li>
                     <li><a class="hover:text-[#16A8AA]" href="">Kontakt</a></li>
                 </ul>
             </div>
+
             <!-- Contact Info -->
-            <div class="contact-info w-[368px] h-[91px] bg-[#1D183A] flex justify-center items-center">
-               <div class="icon text-[#16A8AA] text-4xl p-5">
-                  <i class="fa-solid fa-phone-volume"></i>
-               </div>
-                <div class="info text-white text-base">
-                    <p>Nehmen Sie mit uns Kontakt auf</p>
-                    <p class="font-semibold">Tel.: +49 40 / 334669740</p>
+            <div class="contact-info w-1/3 mt-12 h-20 bg-color-primary hidden lg:flex justify-center items-center">
+                <div class="icon text-[#16A8AA] text-4xl p-5">
+                   <i class="fa-solid fa-phone-volume"></i>
                 </div>
+                 <div class="info text-white text-base">
+                     <p>Nehmen Sie mit uns Kontakt auf</p>
+                     <p class="font-semibold">Tel.: +49 40 / 334669740</p>
+                 </div>
             </div>
+
+            <!-- Mobile Menu -->
+            <div id="menuber" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="menu" class="hidden bg-white h-[100vh] absolute z-10 md:z-20 inset-0">
+                <ul class="h-full grid place-items-center py-20 ">
+                    <li><a  id="hlink" class="text-color-primary hover:text-[#16A8AA]" href="">Startseite</a></li>
+                    <li><a  id="hlink" class="text-color-primary hover:text-[#16A8AA]" href="">Service</a></li>
+                    <li><a  id="hlink" class="text-color-primary hover:text-[#16A8AA]" href="">Kontakt</a></li>
+                    <div class="contact-info w-[368px] h-[91px] bg-[#1D183A] flex justify-center items-center">
+                        <div class="icon text-[#16A8AA] text-4xl p-5">
+                           <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                         <div class="info text-white text-base">
+                             <p>Nehmen Sie mit uns Kontakt auf</p>
+                             <p class="font-semibold">Tel.: +49 40 / 334669740</p>
+                         </div>
+                    </div>
+                </ul> 
+            </div>
+
         </nav>
     </header>
     
     <!-- Hero Section 1-->
 
-    <div class="h-[717px] bg-[#1D183A] flex justify-center items-center">
-       <!-- Hero Card -->
-        <div class="card w-[558px] p-10 h-[480px] bg-white">
-           <div>
-               <p class="text-[40px] leading-[54px] font-semibold">
-                  Ihre Experten für die <br>optimale Absicherung <br>von <span class="text-[#16A8AA]">Beamtenanwärtern</span>
-               </p>
-              <p class="text-base mt-10">Ihre Gesundheit ist unser Anliegen. Wir laden Sie herzlich ein, mit <br>
-                  uns in Kontakt zu treten und von unserer spezialisierten Beratung <br>
-                  für Beamte zu profitieren. Lassen Sie uns gemeinsam die optimale <br>
-                  Absicherung für Ihre Zukunft finden.
-              </p>
-           </div>
-           <button class="w-[479px] h-[59px] bg-[#16A8AA] mt-8 flex justify-center items-center text-white">
-              Kostenfreies Informationsgespräch vereinbaren
-              <i class="fa-solid fa-arrow-right ml-4"></i>
-           </button>
+    <section class="bg-color-primary">
+        <div class="container sm:relative py-0 md:py-0 lg:py-24 bg-color-primary flex justify-start lg:justify-end items-center">
+            <!-- Hero Image -->
+            <div class="hero-iamge relative md:mb-60 lg:mb-0">
+                <img class="lg:w-[813px] lg:h-[616px] bg-cover bg-center" src="./figma-image/page-1-hero-iamge.png" alt="">
+            </div>
+           <!-- Hero Card -->
+            <div class="card lg:w-1/2 hidden lg:block md:block absolute lg:top-52 top-60 left-28 lg:left-16 z-10 lg:p-8 p-10 bg-white">
+               <div class="px-2">
+                    <p class="text-4xl font-semibold">
+                      Ihre Experten für die <br>optimale Absicherung <br>von <span class="text-[#16A8AA]">Beamtenanwärtern</span>
+                    </p>
+    
+                    <p class="text-base mt-10">Ihre Gesundheit ist unser Anliegen. Wir laden Sie herzlich ein, mit <br>
+                      uns in Kontakt zu treten und von unserer spezialisierten Beratung <br>
+                      für Beamte zu profitieren. Lassen Sie uns gemeinsam die optimale <br>
+                      Absicherung für Ihre Zukunft finden.
+                    </p>
+               </div>
+    
+                <button class="w-full h-16 bg-[#16A8AA] mt-8 flex justify-center items-center text-white">
+                   Kostenfreies Informationsgespräch vereinbaren
+                  <i class="fa-solid fa-arrow-right ml-4"></i>
+                </button>
+            </div>
+    
         </div>
-        <!-- Hero Image -->
-        <div class="hero-iamge">
-            <img class="w-[813px] h-[616px]  bg-cover bg-center" src="./figma-image/page-1-hero-iamge.png" alt="">
-        </div>
-    </div>
+    </section>
 
     <!-- Card Section 2 -->
 
-    <section class="card-section-3 w-full h-[680px] flex justify-center items-center bg-white">
+    <section class="lg:py-40 py-10 bg-white">
        <!-- Card -->
-       <div class="card flex flex-row justify-center gap-10 items-center">
+        <div class="container flex flex-col lg:flex-row mb-40 lg:mb-28 gap-52 lg:gap-10">
            <!-- Beihilfe Card -->
-           <div class="beihilfe-card-1 flex flex-col justify-center items-center">
-                <div class="beihilfe-img">
-                   <img class="w-[346px] h-[252px] object-cover" src="./figma-image/Beihilfe Section.jpg" alt="">
+            <div class="w-full beihilfe-card-1 relative flex flex-col justify-center items-center">
+                <div class="beihilfe-img ">
+                   <img class="lg:w-[346px] md:w-full lg:h-60 md:h-full object-cover" src="./figma-image/Beihilfe Section.jpg" alt="">
                 </div>
-                <!-- Card-1 -->
-                <div class="beihilfe-card w-[310px] h-[232px] shadow-2xl flex flex-col justify-center items-center bg-white">
+                <!--Card-1 -->
+                <div class="beihilfe-card w-5/6 lg:w-5/6 md:w-3/4 absolute top-44 lg:top-44 
+                    md:top-80  h-52 shadow-2xl flex flex-col justify-center items-center bg-white">
                     <p class="text-center text-xl font-semibold">Beihilfe</p>
                     <P class="text-center mt-3 text-base">Durchblick im Beihilferecht: Dein <br>
                          Leitfaden für optimale <br>Leistungen als Beamter</P>
@@ -81,38 +112,40 @@
                         <a href="">mehr Informationen</a>
                     </div>
                 </div>
-          </div >
-          <!-- Beihilfe Card -->
-          <div class="beihilfe-card-1 flex flex-col justify-center items-center">
-               <div class="beihilfe-img">
-                  <img class="w-[346px] h-[252px] object-cover" src="./figma-image/Beihilfe Section.jpg" alt="">
-               </div>
-               <!-- Card-1 -->
-                <div class="beihilfe-card w-[310px] h-[232px] shadow-2xl flex flex-col justify-center items-center bg-white">
-                   <p class="text-center text-xl font-semibold">Beihilfe</p>
-                   <P class="text-center mt-3 text-base">Durchblick im Beihilferecht: Dein <br>
-                     Leitfaden für optimale <br>Leistungen als Beamter</P>
-                   <div class="text-center mt-2 text-base font-medium text-[#16A8AA] flex justify-center items-center">
-                       <a href="">mehr Informationen</a>
+            </div >
+            <!-- Beihilfe Card 2-->
+            <div class="w-full beihilfe-card-1 relative flex flex-col justify-center items-center">
+                <div class="beihilfe-img ">
+                   <img class="lg:w-[346px] md:w-full lg:h-60 md:h-full object-cover" src="./figma-image/Beihilfe Section.jpg" alt="">
+                </div>
+                <!--Card-1 -->
+                <div class="beihilfe-card w-5/6 lg:w-5/6 md:w-3/4 absolute top-44 lg:top-44 
+                    md:top-80  h-52 shadow-2xl flex flex-col justify-center items-center bg-white">
+                    <p class="text-center text-xl font-semibold">Beihilfe</p>
+                    <P class="text-center mt-3 text-base">Durchblick im Beihilferecht: Dein <br>
+                         Leitfaden für optimale <br>Leistungen als Beamter</P>
+                    <div class="text-center mt-2 text-base font-medium text-[#16A8AA] flex justify-center items-center">
+                        <a href="">mehr Informationen</a>
                     </div>
                 </div>
-           </div >
+            </div >
             <!-- Beihilfe Card -->
-            <div class="beihilfe-card-1 flex flex-col justify-center items-center">
-                <div class="beihilfe-img">
-                   <img class="w-[346px] h-[252px] object-cover" src="./figma-image/Dienstunfähigkeit.jpg" alt="">
+            <div class="w-full beihilfe-card-1 relative flex flex-col justify-center items-center">
+                <div class="beihilfe-img ">
+                   <img class="lg:w-[346px] md:w-full lg:h-60 md:h-full object-cover" src="./figma-image/Beihilfe Section.jpg" alt="">
                 </div>
-                <!-- Card-1 -->
-                <div class="beihilfe-card w-[310px] h-[232px] flex flex-col shadow-2xl justify-center items-center bg-white">
-                   <p class="text-center text-xl font-semibold">Beihilfe</p>
-                   <P class="text-center mt-3 text-base">Durchblick im Beihilferecht: Dein <br>
-                     Leitfaden für optimale <br>Leistungen als Beamter</P>
-                   <div class="text-center mt-2 text-base font-medium text-[#16A8AA] flex justify-center items-center">
-                      <a href="">mehr Informationen</a>
-                   </div>
+                <!--Card-1 -->
+                <div class="beihilfe-card w-5/6 lg:w-5/6 md:w-3/4 absolute top-44 lg:top-44 
+                    md:top-80  h-52 shadow-2xl flex flex-col justify-center items-center bg-white">
+                    <p class="text-center text-xl font-semibold">Beihilfe</p>
+                    <P class="text-center mt-3 text-base">Durchblick im Beihilferecht: Dein <br>
+                         Leitfaden für optimale <br>Leistungen als Beamter</P>
+                    <div class="text-center mt-2 text-base font-medium text-[#16A8AA] flex justify-center items-center">
+                        <a href="">mehr Informationen</a>
+                    </div>
                 </div>
-            </div>    
-       </div>
+            </div>
+        </div>
 
     </section>
 
@@ -120,260 +153,289 @@
 
     <section class="bg-gray-50 py-16">
         <!-- section name -->
-         <div class="flex flex-col justify-center items-center">
-            <p class="text-center text-base">Unser Service</p>
-            <div class="w-[108px] h-[3px] mt-3 bg-[#16A8AA] flex justify-center items-center"></div>
-         </div>
-        <h2 class="text-3xl text-center font-bold mt-8 mb-">Maßgeschneiderte Lösungen</h2>
-        <div class="container flex justify-center items-center mx-auto text-center">
-          <!-- Section Title -->
-          <div class="grid grid-cols-2 md:grid-cols-2 mt-10 gap-10">
-               <!-- Card 1: Individuelle Beratung für Beamte -->
-               <div class="bg-white w-[547px] flex flex-col justify-center items-center h-[330px] p-6 shadow-lg">
-                  <div class="flex justify-center mb-4">
-                       <!-- Icon (Placeholder for the icon used in your design) -->
-                        <img class="w-[88px] h-[85px] bg-cover bg-center" src="./figma-image/section-3 (2).png" alt="">
-                   </div>
-                   <h3 class="text-xl font-semibold mb-4">Individuelle Beratung für Beamte</h3>
-                   <p class="text-gray-600 text-base">Wir wissen, dass die Gesundheitsbedürfnisse von 
-                    Beamten vielfältig sind. Deshalb bieten wir maßgeschneiderte Beratung,
-                     die auf Ihre spezifischen Bedürfnisse und Lebenssituation <br>zugeschnitten ist.</p>
-                </div>
-      
-                <!-- Card 2: Auswahl passender Beihilfeergänzungstarife -->
-                <div class="bg-[#1D183A] w-[547px] h-[330px] flex flex-col justify-center items-center text-white p-6 shadow-lg">
-                   <div class="flex justify-center mb-4">
-                       <!-- Icon (Placeholder for the icon used in your design) -->
-                       <img class="w-[88px] h-[85px] bg-cover bg-center" src="./figma-image/section-3 (3).png" alt="">
+        <div class="container">
+            <div class="flex flex-col justify-center items-center">
+                <p class="text-center text-base">Unser Service</p>
+                <div class="w-[108px] h-[3px] mt-3 bg-[#16A8AA] flex justify-center items-center"></div>
+            </div>
+            <h2 class="text-3xl text-center font-bold mt-8 mb-">Maßgeschneiderte Lösungen</h2>
+            <div class="flex justify-center items-center text-center">
+              <!-- Section Title -->
+                <div class="w-full grid lg:grid-cols-2 mt-10 gap-10">
+                   <!-- Card 1: Individuelle Beratung für Beamte -->
+                   <div class="bg-white md:w-full flex flex-col justify-center items-center py-20 p-6 shadow-lg">
+                      <div class="flex justify-center mb-4">
+                           <!-- Icon (Placeholder for the icon used in your design) -->
+                            <img class="w-20 h-20 bg-cover bg-center" src="./figma-image/section-3 (2).png" alt="">
+                       </div>
+                       <h3 class="text-xl font-semibold mb-4">Individuelle Beratung für Beamte</h3>
+                       <p class="text-gray-600 text-base">Wir wissen, dass die Gesundheitsbedürfnisse von 
+                        Beamten vielfältig sind. Deshalb bieten wir maßgeschneiderte Beratung,
+                         die auf Ihre spezifischen Bedürfnisse und Lebenssituation <br>zugeschnitten ist.</p>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Auswahl passender Beihilfeergänzungstarife</h3>
-                    <p class="text-base">Wir helfen Ihnen dabei, aus einer Vielzahl von
-                        Beihilfeergänzungstarifen denjenigen auszuwählen,
-                         der nicht nur Ihren aktuellen Anforderungen entspricht,
-                         sondern auch langfristig eine flexible und umfassende Absicherung bietet.</p>
-                </div>
-      
-                <!-- Card 3: Transparenz und Verständlichkeit -->
-                <div class="bg-[#1D183A] w-[547px] h-[330px] flex flex-col justify-center items-center text-white p-6 shadow-lg">
-                    <div class="flex justify-center mb-4">
-                       <!-- Icon (Placeholder for the icon used in your design) -->
-                       <img class="w-[88px] h-[85px] bg-cover bg-center" src="./figma-image/section-3 (1).png" alt="">
+          
+                    <!-- Card 2: Auswahl passender Beihilfeergänzungstarife -->
+                    <div class="bg-color-primary w-full py-20 flex flex-col justify-center items-center text-white p-6 shadow-lg">
+                       <div class="flex justify-center mb-4">
+                           <!-- Icon (Placeholder for the icon used in your design) -->
+                           <img class="w-20 h-20 bg-cover bg-center" src="./figma-image/section-3 (3).png" alt="">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Auswahl passender Beihilfeergänzungstarife</h3>
+                        <p class="text-base">Wir helfen Ihnen dabei, aus einer Vielzahl von
+                            Beihilfeergänzungstarifen denjenigen auszuwählen,
+                             der nicht nur Ihren aktuellen Anforderungen entspricht,
+                             sondern auch langfristig eine flexible und umfassende Absicherung bietet.</p>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Transparenz und Verständlichkeit</h3>
-                    <p class="text-base">Wir legen Wert darauf, komplexe Versicherungsbedingungen verständlich zu erklären,
-                         damit Sie die bestmögliche Entscheidung für Ihre Gesundheitsabsicherung treffen können.</p>
-                </div>
-      
-                <!-- Card 4: Langfristige Partnerschaft -->
-                <div class="bg-white w-[547px] h-[330px] flex flex-col justify-center items-center p-6 shadow-lg">
-                    <div class="flex justify-center mb-4">
-                       <!-- Icon (Placeholder for the icon used in your design) -->
-                       <img class="w-[120px] h-[85px] bg-cover bg-center" src="./figma-image/section-3 (4).png" alt="">
+          
+                    <!-- Card 3: Transparenz und Verständlichkeit -->
+                    <div class="bg-color-primary w-full py-20 flex flex-col justify-center items-center text-white p-6 shadow-lg">
+                        <div class="flex justify-center mb-4">
+                           <!-- Icon (Placeholder for the icon used in your design) -->
+                           <img class="w-20 h-20 bg-cover bg-center" src="./figma-image/section-3 (1).png" alt="">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Transparenz und Verständlichkeit</h3>
+                        <p class="text-base">Wir legen Wert darauf, komplexe Versicherungsbedingungen verständlich zu erklären,
+                             damit Sie die bestmögliche Entscheidung für Ihre Gesundheitsabsicherung treffen können.</p>
+                    </div>
+          
+                    <!-- Card 4: Langfristige Partnerschaft -->
+                    <div class="bg-white w-full py-20 flex flex-col justify-center items-center p-4 shadow-lg">
+                        <div class="flex justify-center mb-4">
+                           <!-- Icon (Placeholder for the icon used in your design) -->
+                           <img class="w-full h-20 bg-cover bg-center" src="./figma-image/section-3 (4).png" alt="">
+                       </div>
+                       <h3 class="text-xl font-semibold mb-4">Langfristige Partnerschaft</h3>
+                       <p class="text-gray-600 text-center text-base">Wir stehen Ihnen langfristig als verlässlicher Partner zur Seite,<br>
+                         um Ihre Versicherungslösungen entsprechend Ihrer <br>Lebenssituation anzupassen und 
+                         Sie bei Fragen oder <br> Veränderungen zu unterstützen.</p>
                    </div>
-                   <h3 class="text-xl font-semibold mb-4">Langfristige Partnerschaft</h3>
-                   <p class="text-gray-600 text-center text-base">Wir stehen Ihnen langfristig als verlässlicher Partner zur Seite,<br>
-                     um Ihre Versicherungslösungen entsprechend Ihrer <br>Lebenssituation anzupassen und 
-                     Sie bei Fragen oder <br> Veränderungen zu unterstützen.</p>
                </div>
-           </div>
+            </div>
         </div>
    </section>
 
     <!-- Section 4 -->
 
-    <section class="w-full h-[850px] flex justify-center items-center py-16 bg-white">
-        
-        <div class="conatiner flex w-[1152px] h-[694px] gap-8">
+    <section class="bg-white">
+        <div class="container">
             <!-- Section 4 Image -->
-            <div class="img">
-                <img class="w-[547px] h-[694px] bg-center bg-cover object-cover" src="./figma-image/section-4.jpg" alt="">
-            </div>
-            <!-- Section 4 Text -->
-            <div class="flex flex-col justify-start items-start">
-                <p class="text-left text-base">Optimale Krankenversicherung für Beamte</p>
-                <div class="w-[324px] h-[3px] mt-2 bg-[#16A8AA] flex justify-center items-center"></div>
-                <p class="text-3xl mt-5">Maßgeschneiderte Lösungen <br>durch umfassenden Tarifvergleich <br>und spezialisierte Beratung</p>
-                <p class="text-base mt-5">Es ist wichtig, die verschiedenen Angebote der privaten Krankenversicherer <br>
-                    zu vergleichen, um den passenden Beihilfeergänzungstarif zu finden, der den <br>
-                    individuellen Bedürfnissen von Beamten gerecht wird. Ein umfassender Vergleich <br>
-                    der Tarife kann helfen, diejenigen Leistungen zu identifizieren, die über die <br>
-                    Beihilfe hinausgehen und eine optimale Absicherung im Krankheitsfall bieten.
-                </p>
-                <p class="text-base mt-5">
-                   Als Versicherungsspezialist verstehen wir, dass Beamte eine spezielle <br>
-                   Beratung benötigen, wenn es um ihre Krankenversicherung und die ergänzende <br>
-                   Absicherung über die Beihilfe hinaus geht. Wir sind <br>
-                   darauf spezialisiert, Ihnen als Beamtin oder Beamter, die bestmögliche <br>
-                   Versicherungslösung zu bieten, die Ihren individuellen Anforderungen <br>
-                   gerecht wird. Dieses beinhaltet ein bereits bestehendes Beamtenverhältnis,<br>
-                   aber auch Beamtenanwärter.
-                </p>
-                <p class="text-base mt-5">
-                    Als Versicherungsspezialist verstehen wir, dass Beamte eine spezielle <br>
-                    Beratung benötigen, wenn es um ihre Krankenversicherung und die ergänzende <br>
-                    Absicherung über die Beihilfe hinaus geht. Wir sind <br>
-                    darauf spezialisiert, Ihnen als Beamtin oder Beamter, die bestmögliche <br>
-                    Versicherungslösung zu bieten, die Ihren individuellen Anforderungen <br>
-                    gerecht wird. Dieses beinhaltet ein bereits bestehendes Beamtenverhältnis,<br>
-                    aber auch Beamtenanwärter.
-                 </p>
+            <div class="w-full flex flex-col lg:flex-row justify-between py-10 md:mt-32 gap-10">
+                <div class="img lg:w-1/2">
+                    <img class="w-full md:h-4/5 bg-center bg-cover object-cover" src="./figma-image/section-4.jpg" alt="">
+                </div>
+                <!-- Section 4 Text -->
+                <div class="md:w-1/2 flex flex-col justify-start items-start">
+                    <p class="text-left text-base">Optimale Krankenversicherung für Beamte</p>
+                    <div class="w-[324px] h-[3px] mt-2 bg-[#16A8AA] flex justify-center items-center"></div>
+                    <p class="text-3xl mt-5">Maßgeschneiderte Lösungen <br>durch umfassenden Tarifvergleich <br>und spezialisierte Beratung</p>
+                    <p class="text-base mt-5">Es ist wichtig, die verschiedenen Angebote der privaten Krankenversicherer <br>
+                        zu vergleichen, um den passenden Beihilfeergänzungstarif zu finden, der den <br>
+                        individuellen Bedürfnissen von Beamten gerecht wird. Ein umfassender Vergleich <br>
+                        der Tarife kann helfen, diejenigen Leistungen zu identifizieren, die über die <br>
+                        Beihilfe hinausgehen und eine optimale Absicherung im Krankheitsfall bieten.
+                    </p>
+                    <p class="text-base mt-5">
+                       Als Versicherungsspezialist verstehen wir, dass Beamte eine spezielle <br>
+                       Beratung benötigen, wenn es um ihre Krankenversicherung und die ergänzende <br>
+                       Absicherung über die Beihilfe hinaus geht. Wir sind <br>
+                       darauf spezialisiert, Ihnen als Beamtin oder Beamter, die bestmögliche <br>
+                       Versicherungslösung zu bieten, die Ihren individuellen Anforderungen <br>
+                       gerecht wird. Dieses beinhaltet ein bereits bestehendes Beamtenverhältnis,<br>
+                       aber auch Beamtenanwärter.
+                    </p>
+                    <p class="text-base mt-5">
+                        Als Versicherungsspezialist verstehen wir, dass Beamte eine spezielle <br>
+                        Beratung benötigen, wenn es um ihre Krankenversicherung und die ergänzende <br>
+                        Absicherung über die Beihilfe hinaus geht. Wir sind <br>
+                        darauf spezialisiert, Ihnen als Beamtin oder Beamter, die bestmögliche <br>
+                        Versicherungslösung zu bieten, die Ihren individuellen Anforderungen <br>
+                        gerecht wird. Dieses beinhaltet ein bereits bestehendes Beamtenverhältnis,<br>
+                        aber auch Beamtenanwärter.
+                     </p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Section 5 -->
 
-    <footer class="h-[815px] bg-[#1D183A] py-20 text-white">
-        <div class="flex flex-col justify-center items-center">
-            <p class="text-center text-base">Beamtenvorsorge.de</p>
-            <div class="w-[158px] h-[3px] mt-3 bg-[#16A8AA] flex justify-center items-center"></div>
-            <p class="text-3xl mt-5">Wer sind wir und wofür stehen wir</p>
-        </div>
-        <!-- Three Columns -->
-        <div class="tree-colums-text flex justify-evenly items-center mt-20">
-            <!-- Column 1: Seriös -->
-            <div class="colum-1 flex flex-col">
-                <h3 class="flex items-center text-xl font-semibold text-white mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 5.707 8.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd" />
-                    </svg>
-                    Seriös
-                </h3>
-                <ul class="text-base">
-                    <li class="text-base"><strong><b>Verlässlich:</b></strong>
-                        Wir stehen für Verlässlichkeit und <br>Integrität in all unseren Dienstleistungen.</li>
-                    <li class="text-base mt-8"><strong>Vertrauenswürdig:</strong>
-                         Unser Engagement für <br>Vertrauenswürdigkeit spiegelt sich in unserer <br>Arbeit wider.</li>
-                    <li class="text-base mt-8"><strong>Zuverlässig:</strong>
-                         Wir bieten eine zuverlässige und <br>professionelle Plattform für Beamte.</li>
-                    <li class="text-base mt-8"><strong>Glaubwürdig:</strong>
-                        Unser Ruf basiert auf <br>Glaubwürdigkeit und einer soliden <br>Arbeitsweise.</li>
-                    <li class="text-base mt-8"><strong>Zuverlässige Partnerschaft:</strong> 
-                        Wir sind Ihr <br>zuverlässiger Partner und unterstützen Sie in <br>Ihrem beruflichen Umfeld mit Seriosität.</li>
-                </ul>
+    <footer class="py-20 bg-color-primary text-white">
+        <div class="container">
+            <div>
+                <div class="flex flex-col justify-center items-center">
+                <p class="text-center text-base">Beamtenvorsorge.de</p>
+                <div class="w-[158px] h-[3px] mt-3 bg-[#16A8AA] flex justify-center items-center"></div>
+                <p class="text-3xl mt-5 text-center md:text-left">Wer sind wir und wofür stehen wir</p>
             </div>
-
-            <div class="colum-1 flex flex-col">
-                <h3 class="flex items-center text-xl font-semibold text-white mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 5.707 8.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd" />
-                    </svg>
-                    Kompetenz
-                </h3>
-                <ul class="text-base">
-                    <li class="text-base"><strong><b>Verlässlich:</b></strong>
-                        Wir stehen für Verlässlichkeit und <br>Integrität in all unseren Dienstleistungen.</li>
-                    <li class="text-base mt-8"><strong>Vertrauenswürdig:</strong>
-                         Unser Engagement für <br>Vertrauenswürdigkeit spiegelt sich in unserer <br>Arbeit wider.</li>
-                    <li class="text-base mt-8"><strong>Zuverlässig:</strong>
-                         Wir bieten eine zuverlässige und <br>professionelle Plattform für Beamte.</li>
-                    <li class="text-base mt-8"><strong>Glaubwürdig:</strong>
-                        Unser Ruf basiert auf <br>Glaubwürdigkeit und einer soliden <br>Arbeitsweise.</li>
-                    <li class="text-base mt-8"><strong>Zuverlässige Partnerschaft:</strong> 
-                        Wir sind Ihr <br>zuverlässiger Partner und unterstützen Sie in <br>Ihrem beruflichen Umfeld mit Seriosität.</li>
-                </ul>
-            </div>
-
-            <div class="colum-1 flex flex-col">
-                <h3 class="flex items-center text-xl font-semibold text-white mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 5.707 8.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd" />
-                    </svg>
-                    Beständigkeit
-                </h3>
-                <ul class="text-base">
-                    <li class="text-base"><strong><b>Verlässlich:</b></strong>
-                        Wir stehen für Verlässlichkeit und <br>Integrität in all unseren Dienstleistungen.</li>
-                    <li class="text-base mt-8"><strong>Vertrauenswürdig:</strong>
-                         Unser Engagement für <br>Vertrauenswürdigkeit spiegelt sich in unserer <br>Arbeit wider.</li>
-                    <li class="text-base mt-8"><strong>Zuverlässig:</strong>
-                         Wir bieten eine zuverlässige und <br>professionelle Plattform für Beamte.</li>
-                    <li class="text-base mt-8"><strong>Glaubwürdig:</strong>
-                        Unser Ruf basiert auf <br>Glaubwürdigkeit und einer soliden <br>Arbeitsweise.</li>
-                    <li class="text-base mt-8"><strong>Zuverlässige Partnerschaft:</strong> 
-                        Wir sind Ihr <br>zuverlässiger Partner und unterstützen Sie in <br>Ihrem beruflichen Umfeld mit Seriosität.</li>
-                </ul>
+            <!-- Three Columns -->
+            <div class="tree-colums-text flex flex-col lg:flex-row justify-between gap-10 lg:gap-0 lg:items-center mt-20">
+                <!-- Column 1: Seriös -->
+                <div class="colum-1 flex flex-col">
+                    <h3 class="flex items-center text-xl font-semibold text-white mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 5.707 8.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        Seriös
+                    </h3>
+                    <ul class="text-base">
+                        <li class="text-base"><strong><b>Verlässlich:</b></strong>
+                            Wir stehen für Verlässlichkeit und <br>Integrität in all unseren Dienstleistungen.</li>
+                        <li class="text-base mt-8"><strong>Vertrauenswürdig:</strong>
+                             Unser Engagement für <br>Vertrauenswürdigkeit spiegelt sich in unserer <br>Arbeit wider.</li>
+                        <li class="text-base mt-8"><strong>Zuverlässig:</strong>
+                             Wir bieten eine zuverlässige und <br>professionelle Plattform für Beamte.</li>
+                        <li class="text-base mt-8"><strong>Glaubwürdig:</strong>
+                            Unser Ruf basiert auf <br>Glaubwürdigkeit und einer soliden <br>Arbeitsweise.</li>
+                        <li class="text-base mt-8"><strong>Zuverlässige Partnerschaft:</strong> 
+                            Wir sind Ihr <br>zuverlässiger Partner und unterstützen Sie in <br>Ihrem beruflichen Umfeld mit Seriosität.</li>
+                    </ul>
+                </div>
+    
+                <div class="colum-1 flex flex-col">
+                    <h3 class="flex items-center text-xl font-semibold text-white mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 5.707 8.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        Kompetenz
+                    </h3>
+                    <ul class="text-base">
+                        <li class="text-base"><strong><b>Verlässlich:</b></strong>
+                            Wir stehen für Verlässlichkeit und <br>Integrität in all unseren Dienstleistungen.</li>
+                        <li class="text-base mt-8"><strong>Vertrauenswürdig:</strong>
+                             Unser Engagement für <br>Vertrauenswürdigkeit spiegelt sich in unserer <br>Arbeit wider.</li>
+                        <li class="text-base mt-8"><strong>Zuverlässig:</strong>
+                             Wir bieten eine zuverlässige und <br>professionelle Plattform für Beamte.</li>
+                        <li class="text-base mt-8"><strong>Glaubwürdig:</strong>
+                            Unser Ruf basiert auf <br>Glaubwürdigkeit und einer soliden <br>Arbeitsweise.</li>
+                        <li class="text-base mt-8"><strong>Zuverlässige Partnerschaft:</strong> 
+                            Wir sind Ihr <br>zuverlässiger Partner und unterstützen Sie in <br>Ihrem beruflichen Umfeld mit Seriosität.</li>
+                    </ul>
+                </div>
+    
+                <div class="colum-1 flex flex-col">
+                    <h3 class="flex items-center text-xl font-semibold text-white mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 5.707 8.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        Beständigkeit
+                    </h3>
+                    <ul class="text-base">
+                        <li class="text-base"><strong><b>Verlässlich:</b></strong>
+                            Wir stehen für Verlässlichkeit und <br>Integrität in all unseren Dienstleistungen.</li>
+                        <li class="text-base mt-8"><strong>Vertrauenswürdig:</strong>
+                             Unser Engagement für <br>Vertrauenswürdigkeit spiegelt sich in unserer <br>Arbeit wider.</li>
+                        <li class="text-base mt-8"><strong>Zuverlässig:</strong>
+                             Wir bieten eine zuverlässige und <br>professionelle Plattform für Beamte.</li>
+                        <li class="text-base mt-8"><strong>Glaubwürdig:</strong>
+                            Unser Ruf basiert auf <br>Glaubwürdigkeit und einer soliden <br>Arbeitsweise.</li>
+                        <li class="text-base mt-8"><strong>Zuverlässige Partnerschaft:</strong> 
+                            Wir sind Ihr <br>zuverlässiger Partner und unterstützen Sie in <br>Ihrem beruflichen Umfeld mit Seriosität.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- FAQ Section 6 -->
 
-    <footer class="w-full h-[840px] flex justify-center items-center bg-white">
-        <div class="faq-section w-[1153px] h-[800px] mx-auto bg-white flex flex-col justify-center items-start">
-            <div class="flex flex-col justify-start items-start">
-                <p class="text-left text-base">Umfangreiche Maßnahmen zur Genesung und Gesundheitserhaltung</p>
+    <footer class="flex justify-center items-center bg-white">
+        <div class="container py-24 bg-white flex flex-col justify-center md:items-start items-center">
+            <div class="flex flex-col justify-center items-center md:justify-start md:items-start">
+                <p class="md:text-left text-center text-sm  md:text-base">Umfangreiche Maßnahmen zur Genesung und Gesundheitserhaltung</p>
                 <div class="w-[500px] h-[3px] mt-3 bg-[#16A8AA] flex justify-center items-center"></div>
                 <p class="text-3xl text-center mt-5">Rehabilitation und Kuren im Beihilferecht für Beamte</p>
             </div>
-            <div class="w-[1153px] p-4 mt-8 bg-[#F7F7F7] flext justify-between items-center">
+            <div class="w-full p-4 mt-8 bg-[#F7F7F7] flext justify-between items-center">
                 <p class="">
                     Anschlussheilbehandlung: Umfangreiche Maßnahmen zur Genesung und Gesundheitserhaltung
                     <i class="fa-solid fa-chevron-down relative left-96"></i>
                 </p>  
             </div>
-            <p class="ml-10 mt-5 text-base">Die Anschlussheilbehandlung (AHB) ist eine Art medizinischer Rehabilitationsmaßnahme, die unmittelbar an einen Krankenhausaufenthalt <br>
-                anschließt. Sie ist dazu gedacht, die Genesung und Rehabilitation von Patienten nach einer stationären Behandlung zu unterstützen. In der <br>
-                Beihilfe für Beamte bezieht sich die AHB auf eine spezielle Art der medizinischen Rehabilitation, die nach einem <br>
-                stationären Krankenhausaufenthalt erfolgt und dazu dient, den Genesungsprozess des Beamten zu unterstützen. <br>
-                <p class="ml-10 mt-5">Für die Inanspruchnahme der Anschlussheilbehandlung ist eine ärztliche Verordnung erforderlich, die die medizinische Notwendigkeit der <br>
+            <p class="ml-10 mr-10 mt-5 text-base">Die Anschlussheilbehandlung (AHB) ist eine Art medizinischer Rehabilitationsmaßnahme, die unmittelbar an einen Krankenhausaufenthalt
+                anschließt. Sie ist dazu gedacht, die Genesung und Rehabilitation von Patienten nach einer stationären Behandlung zu unterstützen. In der 
+                Beihilfe für Beamte bezieht sich die AHB auf eine spezielle Art der medizinischen Rehabilitation, die nach einem 
+                stationären Krankenhausaufenthalt erfolgt und dazu dient, den Genesungsprozess des Beamten zu unterstützen.
+                <p class="ml-10 mr-10 mt-5">Für die Inanspruchnahme der Anschlussheilbehandlung ist eine ärztliche Verordnung erforderlich, die die medizinische Notwendigkeit der
                 Maßnahme bestätigt. Die Details zur Kostenübernahme und den genauen Abläufen sind jedoch in den
-                Beihilfevorschriften des jeweiligen <br>Bundeslandes festgelegt, können u.U. aber auch zu Selbstbehalten des Beamten führen</p>
+                Beihilfevorschriften des jeweiligen Bundeslandes festgelegt, können u.U. aber auch zu Selbstbehalten des Beamten führen</p>
             </p>
-            <div class="w-[1153px] p-4 mt-5 bg-[#F7F7F7] flext justify-between items-center">
+            <div class="w-full p-4 mt-5 bg-[#F7F7F7] flext justify-between items-center">
                 <p class="">
                     Anschlussheilbehandlung: Umfangreiche Maßnahmen zur Genesung und Gesundheitserhaltung
                     <i class="fa-solid fa-chevron-down relative left-96"></i>
                 </p>  
             </div>
-            <div class="w-[1153px] p-4 mt-5 bg-[#F7F7F7] flext justify-between items-center">
+            <div class="w-full p-4 mt-5 bg-[#F7F7F7] flext justify-between items-center">
                 <p class="">
                     Anschlussheilbehandlung: Umfangreiche Maßnahmen zur Genesung und Gesundheitserhaltung
                     <i class="fa-solid fa-chevron-down relative left-96"></i>
                 </p>  
             </div>
+        </div>
         </div>
     </footer>
     
     <!-- Section 7 -->
 
-    <footer class="bg-[#1D183A] h-[455px] flex flex-col justify-center items-center py-32 text-white">
-        <div class="container flex justify-between items-center">
-            <!-- Logo and Description -->
-            <div class="w-1/3">
-                <img class="w-[295px] h-[72px] bg-cover bg-center filter invert brightness-0" src="./figma-image/header-logo.png" alt="">
-                <p class="mt-12">
-                    Ihre Experten für die optimale Absicherung <br>von Beamten & Beamtenanwärtern.
-                </p>
+    <footer class="bg-color-primary py-14 text-white">
+        <div class="container">
+            <div class="flex flex-col lg:flex-row justify-between gap-5 lg:gap-0 lg:items-center">
+                <!-- Logo and Description -->
+                <div class="lg:w-1/2">
+                    <img class="w-[295px] h-[72px] bg-cover bg-center filter invert brightness-0" src="./figma-image/header-logo.png" alt="">
+                    <p class="mt-12">
+                        Ihre Experten für die optimale Absicherung <br>von Beamten & Beamtenanwärtern.
+                    </p>
+                </div>
+    
+                <!-- Contact Section -->
+                <div class="w-1/3">
+                    <h4 class="text-xl font-semibold mb-2">Kontakt</h4>
+                    <div class="w-24 h-[3px] bg-color-secondary mt-2"></div>
+                    <p class="mt-3">Beamtenvorsorge.de<br>Lübecker Str. 101<br>22087 Hamburg</p>
+                    <p class="mt-8">Telefon: +49 40 / 334669740<br>E-Mail: info@Beamtenvorsorge.de</p>
+                </div>
+    
+                <!-- Services Section -->
+                <div class="lg:w-1/3 lg:ml-20">
+                    <h4 class="text-xl font-semibold mb-2">Unser Service</h4>
+                    <div class="w-24 h-[3px] bg-color-secondary mt-2"></div>
+                    <ul class="space-y-2 mt-3">
+                        <li>➔ Beamte</li>
+                        <li>➔ Berufsstarter im Öffentlichen Dienst</li>
+                        <li>➔ Dienstunfähigkeitsversicherung</li>
+                        <li>➔ Diensthaftpflichtversicherung</li>
+                        <li>➔ Vermögensschadenhaftpflicht</li>
+                        <li>➔ Kontakt</li>
+                    </ul>
+                </div>
             </div>
 
-            <!-- Contact Section -->
-            <div class="w-1/3">
-                <h4 class="text-xl font-semibold mb-2">Kontakt</h4>
-                <p>Beamtenvorsorge.de<br>Lübecker Str. 101<br>22087 Hamburg</p>
-                <p class="mt-4">Telefon: +49 40 / 334669740<br>E-Mail: info@Beamtenvorsorge.de</p>
-            </div>
-
-            <!-- Services Section -->
-            <div class="w-1/3 ml-20">
-                <h4 class="text-xl font-semibold mb-2">Unser Service</h4>
-                <ul class="space-y-2">
-                    <li>➔ Beamte</li>
-                    <li>➔ Berufsstarter im Öffentlichen Dienst</li>
-                    <li>➔ Dienstunfähigkeitsversicherung</li>
-                    <li>➔ Diensthaftpflichtversicherung</li>
-                    <li>➔ Vermögensschadenhaftpflicht</li>
-                    <li>➔ Kontakt</li>
-                </ul>
-            </div>
+            <div class="border-t border-gray-600 pt-4 mt-8"></div>
+            
         </div>
-
         <!-- Bottom Footer Text -->
-        <div class="container mx-auto flex justify-between px-8 mt-8 text-center border-t border-gray-600 pt-4">
+        <div class="container flex justify-between">
             <p class="text-sm">Copyright © 2024. Beamtenvorsorge.de</p>
             <p class="text-sm">Impressum | Datenschutz</p>
         </div>
     </footer>
+
+
+    <!-- JS Use -->
+
+    <script>
+        // Mobile User
+        const menuber = document.querySelector('#menuber');
+        const menu = document.querySelector('#menu');
+        const hlink = document.querySelectorAll('#hlink');
+        const fasolid = document.querySelector('.fa-solid');
+
+        menuber.addEventListener("click", () =>{
+            menu.classList.toggle('hidden');
+            fasolid.classList.toggle('fa-xmark')
+        })
+    </script>
 
 </body>
 </html>
